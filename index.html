@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta name="author" content="iceStone <ice@wedn.net>">
+  <title>零食店</title>
+  <link rel="shortcut icon" href="bitbug_favicon.ico">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/iconfont.css">
+</head>
+
+<body>
+  <!-- 顶部区域 -->
+  <header>
+    <!-- 通栏菜单 -->
+    <div class="topbar hidden-sm hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="tb-1 col-md-2">
+            <a href="#" class="text-muted">
+              <i class="iconfont icon-shopping"></i>
+              <span>蓝鸽的零食店</span>
+              <i class="glyphicon glyphicon-chevron-down"></i>
+              <img src="img/c_06.jpg" alt="扫一扫">
+            </a>
+          </div>
+          <!-- <div class="tb-2 col-md-2 text-center text-muted">
+            <i class="icon-telephone"></i><span>4006-89-4006（服务时间：9:00-21:00）</span>
+          </div> -->
+          <div class="tb-2 col-md-4 text-center">
+            <a href="#" class="text-muted test-telephone">手机版</a>
+            <a href="#" class="text-muted">收藏本店</a>
+          </div>
+          
+          <div class="tb-4 col-md-2 text-center">
+            <a href="#" class="btn btn-register btn-sm">免费注册</a>
+            <a href="#" class="text-muted" data-toggle="modal" data-target=".modal">登录</a>
+          </div>
+          <div class="tb-5 navbar-form navbar-left col-md-3" role="search">
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /通栏菜单 -->
+    <!-- 导航菜单 -->
+
+    <nav class="navbar navbar-itcast" data-spy="affix" data-offset-top="200" data-offset-bottom="1000">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_menu" aria-expanded="false">
+            <span class="sr-only">切换菜单显示</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <q class="iconfont icon-shopping"></q>
+          </a>
+        </div>
+       
+          <div id="menu" class="hidden-sm hidden-xs" >
+            <ul>
+              <li>蓝鸽的主页</li>
+              <li>点我分享好东西
+                <ul>
+                  <li>第一步</li>
+                  <li>第二步</li>
+                  <li>第三步</li>
+                </ul>
+              </li>
+              <li>点我搞事情
+                <ul>
+                  <li>提交</li>
+                  <li>历史</li>
+                  <li>资助</li>
+                </ul>
+              </li>
+              <li>大大大优惠！
+               <ul>
+                  <li>优惠</li>
+                  <li>优惠券</li>
+                </ul>
+              </li>
+              
+              <li>蓝鸽的私人空间
+               <ul>
+                  <li>秘密</li>
+                  <li>秘密+1</li>
+                  <li>秘密+n</li>
+                </ul>
+              </li>
+              <li>卖家论坛
+               <ul>
+                  <li>零食交流</li>
+                  <li>建议投诉</li>
+                  <li>其他</li>
+                </ul>
+              </li>
+              <li>联系我们
+               <ul>
+                  <li>联系方式</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+          
+       <!--  <div class="btn-group hidden-sm hidden-xs">
+          <button type="button" class="btn btn-danger">Action</button>
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+        <div class="btn-group hidden-sm hidden-xs">
+          <button type="button" class="btn btn-danger">Action</button>
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+        <div class="btn-group hidden-sm hidden-xs">
+          <button type="button" class="btn btn-danger">Action</button>
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+        <div class="btn-group hidden-sm hidden-xs">
+          <button type="button" class="btn btn-danger">Action</button>
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+        <div class="btn-group hidden-sm hidden-xs">
+          <button type="button" class="btn btn-danger">Action</button>
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+        <div class="btn-group hidden-sm hidden-xs">
+          <button type="button" class="btn btn-danger">Action</button>
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+      
+        </div>
+         <div class="btn-group hidden-sm hidden-xs btn-right">
+          <button type="button" class="btn btn-danger">Action</button>
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+      
+        </div>
+         -->
+       
+         <div class="collapse navbar-collapse" id="nav_menu">
+          
+           
+            <ul class="cd-accordion-menu animated">
+                <li class="has-children">
+                  <input type="checkbox" name ="group-1" id="group-1" checked>
+                  <label for="group-1">蓝鸽的主页</label>
+
+                
+                  
+                 
+                </li>
+
+                <li class="has-children">
+                  <input type="checkbox" name ="group-2" id="group-2">
+                  <label for="group-2">点我分享好东西</label>
+
+                  <ul>
+                    <li><a href="#0">第一步</a></li>
+                    <li><a href="#0">第二步</a></li>
+                    <li><a href="#0">第三步</a></li>
+                  </ul>
+                </li>
+
+                <li class="has-children">
+                  <input type="checkbox" name ="group-3" id="group-3">
+                  <label for="group-3">点我搞事情</label>
+
+                  <ul>
+                    <li><a href="#0">提交</a></li>
+                    <li><a href="#0">历史</a></li>
+                    <li><a href="#0">赞助</a></li>
+                   
+                  </ul>
+                </li>
+
+                <li class="has-children">
+                  <input type="checkbox" name ="group-4" id="group-4">
+                  <label for="group-4">大大大优惠！</label>
+
+                
+                  <ul>
+                    <li><a href="#0">优惠</a></li>
+                    <li><a href="#0">优惠劵</a></li>
+                  </ul>
+                 
+                          
+                </li>
+
+                <li class="has-children">
+                  <input type="checkbox" name ="group-5" id="group-5">
+                  <label for="group-5">蓝鸽的私人空间</label>
+
+                
+                  <ul>
+                    <li><a href="#0">秘密</a></li>
+                    <li><a href="#0">秘密+1</a></li>
+                    <li><a href="#0">秘密+n</a></li>
+                  </ul>
+                </li>
+              
+            </ul>
+         <!--  <ul class="nav navbar-nav navhidden">
+            <li class="active"><a href="#">我要投资 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">我要借款</a></li>
+            <li><a href="#">平台介绍</a></li>
+            <li><a href="#">新手专区</a></li>
+            <li><a href="#">最新动态</a></li>
+            <li><a href="#">微论坛</a></li>
+          </ul>
+           <ul class="nav navbar-nav navbar-right ">
+            <li><a href="#">个人中心</a></li>
+        </ul> -->
+        </div>
+       <!--  <div class="navhidden">
+            <div class="btn-group hidden-sm hidden-xs">
+              <button type="button" class="btn btn-danger">Action</button>
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="btn-group hidden-sm hidden-xs">
+              <button type="button" class="btn btn-danger">Action</button>
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="btn-group hidden-sm hidden-xs">
+              <button type="button" class="btn btn-danger">Action</button>
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="btn-group hidden-sm hidden-xs">
+              <button type="button" class="btn btn-danger">Action</button>
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="btn-group hidden-sm hidden-xs">
+              <button type="button" class="btn btn-danger">Action</button>
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="btn-group hidden-sm hidden-xs">
+              <button type="button" class="btn btn-danger">Action</button>
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+          
+            </div>
+             <div class="btn-group hidden-sm hidden-xs btn-right">
+              <button type="button" class="btn btn-danger">Action</button>
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+          
+            </div> -->
+
+          
+           
+        <!-- </div> -->
+         
+      </div>
+      
+    </nav>
+    <!-- /导航菜单 -->
+  </header>
+  <!-- /顶部区域 -->
+  <!-- 通栏轮播 -->
+  <section id="home_slide" class="carousel slide" data-ride="carousel">
+      <div class="row">
+
+        <div class="l_banner col-md-2 hidden-xs">
+            <ul>
+
+                <li>
+                   <a href="#">凉果蜜饯类</a>
+                </li>
+                <li>
+                   <a href="#">膨化食品类</a>
+                </li>
+                <li>
+                   <a href="#">肉干鱼干类</a>
+                </li>
+                <li>
+                   <a href="#">口香糖类</a>
+                </li>
+                <li>
+                   <a href="#">果冻类</a>
+                </li>
+                <li>
+                   <a href="#">干果类</a>
+                </li>
+                <li>
+                   <a href="#">饮品冲剂</a>
+                </li>
+                <li>
+                   <a href="#">豆制品</a>
+                </li>
+                <li>
+                   <a href="#">海鲜制品</a>
+                </li>
+                <li>
+                   <a href="#">肉类制品</a>
+                </li>
+                <li>
+                   <a href="#">巧克力</a>
+                </li>
+                <li>
+                   <a href="#">面包</a>
+                </li>
+                <li>
+                   <a href="#">休闲食品</a>
+                </li>
+                <li>
+                   <a href="#">海鲜制品</a>
+                </li>
+                <li>
+                   <a href="#">罐装零食</a>
+                </li>
+                <li>
+                   <a href="#">小食品</a>
+                </li>
+            </ul>
+        </div>
+    <!-- 指示器 -->
+        <div class="col-md-9">
+          <ol class="carousel-indicators">
+            <li data-target="#home_slide" data-slide-to="0" class="active"></li>
+            <li data-target="#home_slide" data-slide-to="1"></li>
+            <li data-target="#home_slide" data-slide-to="2"></li>
+            <li data-target="#home_slide" data-slide-to="3"></li>
+          </ol>
+          <!-- 轮播页 -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="item-image" data-image-large="img/slide_01_2000x410.jpg" data-image-small="img/slide_01_640x340.jpg" data-image-alt="哈哈"></div>
+            </div>
+            <div class="item">
+              <div class="item-image" data-image-large="img/slide_02_2000x410.jpg" data-image-small="img/slide_02_640x340.jpg" data-image-alt="哈哈"></div>
+            </div>
+            <div class="item">
+              <div class="item-image" data-image-large="img/slide_03_2000x410.jpg" data-image-small="img/slide_03_640x340.jpg" data-image-alt="哈哈"></div>
+            </div>
+            <div class="item">
+              <div class="item-image" data-image-large="img/slide_04_2000x410.jpg" data-image-small="img/slide_04_640x340.jpg" data-image-alt="哈哈"></div>
+            </div>
+          </div>
+          <!-- 控制按钮 -->
+          <a class="left carousel-control" href="#home_slide" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">上一张</span>
+          </a>
+          <a class="right carousel-control" href="#home_slide" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">下一张</span>
+          </a>
+        </div>
+         <div class="col-md-1 rightnav hidden-xs">
+                <ol>
+                  <li><span class="iconfont icon-shopping"></span><em class="tab-text">购物</em></li>
+                  <li><span class="iconfont icon-sale"></span><em class="tab-text">交易</em></li>
+                  <li><span class="iconfont icon-dollors"></span><em class="tab-text">金额</em></li>
+                  <li><span class="iconfont icon-user"></span><em class="tab-text">用户</em></li>
+                  <a href="#"><li><span>顶部</span></li></a>
+                </ol>
+          </div>
+        
+    </div>
+  
+  <!-- 预约投标 -->
+  <section id="booking">
+    <div class="container">
+      <p class="pull-left"><b class="iconfont icon-sale"></b> 现在有<span>666</span>人在网页浏览，累计零食交易<span>484,789,666</span>次。 什么是超级好吃的零食？ <a class="just-now" href="#">立即查看</a></p>
+      <p class="hidden-sm hidden-xs pull-right"><a class="quick-learn" href="#"><b class="iconfont icon-sale"></b> 舌尖上的蓝鸽零食店点击</a></p>
+    </div>
+  </section>
+  <!-- /预约投标 -->
+  <!-- 投资产品 -->
+  <section id="products">
+
+    <div class="container">
+      <!-- Nav tabs -->
+      <div class="touch-scroll">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#category_01" aria-controls="category_01" role="tab" data-toggle="tab">特别推荐</a></li>
+          <li role="presentation"><a href="#category_02" aria-controls="category_02" role="tab" data-toggle="tab">凉果蜜饯类</a></li>
+          <li role="presentation"><a href="#category_03" aria-controls="category_03" role="tab" data-toggle="tab">膨化食品类</a></li>
+          <li role="presentation"><a href="#category_04" aria-controls="category_04" role="tab" data-toggle="tab">肉干鱼干类</a></li>
+          <li role="presentation"><a href="#category_05" aria-controls="category_05" role="tab" data-toggle="tab">口香糖类</a></li>
+          <li role="presentation"><a href="#category_06" aria-controls="category_06" role="tab" data-toggle="tab">果冻类</a></li>
+          <li role="presentation"><a href="#category_06" aria-controls="category_06" role="tab" data-toggle="tab">干果类</a></li>
+          <li class="hidden-sm hidden-xs pull-right"><a href="#" class="btn btn-link">更多</a></li>
+        </ul>
+      </div>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active in" id="category_01">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>5.2</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>根本停不下来的口香糖</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>15.98<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>15.7</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>百吃不胖的零食礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>246.39<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>4.9</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>女朋友的最爱零食包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.99<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>5.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>基友大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>64.89<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>6.7</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>李子明的旺仔礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>129.90<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="category_02">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="category_03">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="category_04">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="category_05">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                 <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="category_06">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                 <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="panel-product">
+                <div class="panel-heading">
+                  <p class="tooltips">
+                    <span class="primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="北京市">折</span>
+                    <span class="secondary" data-toggle="tooltip" data-placement="top" title="" data-original-title="实地认证">优</span>
+                  </p>
+                  <p><strong>8.6</strong><sub>%</sub>
+                    <br><span>折扣率</span></p>
+                </div>
+                <div class="panel-body">
+                  <h5>蓝鸽的零食大礼包</h5>
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 col-lg-9">&nbsp;</div>
+                    <div class="col-xs-6 text-center col-lg-9 col-lg-offset-1">
+                      <dt>售价</dt>
+                      <dd>99.80<sub>元</sub></dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /投资产品 -->
+  <!-- 新闻 -->
+  <section id="news">
+    <div class="container">
+      <!-- <div class="row">
+        <div class="col-md-offset-2 col-md-2">
+          <div class="news-title">
+            全部新闻
+          </div>
+        </div>
+        <div class="col-md-1">
+          Nav tabs
+          <ul class="nav nav-pills nav-stacked news-nav" role="tablist">
+            <li role="presentation" class="active"><a href="#news_1" aria-controls="news_1" role="tab" data-toggle="tab" data-title="全部新聞"><i class="icon-news01"></i></a></li>
+            <li role="presentation"><a href="#news_2" aria-controls="news_2" role="tab" data-toggle="tab" data-title="媒體報道"><i class="icon-news02"></i></a></li>
+            <li role="presentation"><a href="#news_3" aria-controls="news_3" role="tab" data-toggle="tab" data-title="微金所頭條"><i class="icon-news03"></i></a></li>
+            <li role="presentation"><a href="#news_4" aria-controls="news_4" role="tab" data-toggle="tab" data-title="行業資訊"><i class="icon-news04"></i></a></li>
+          </ul>
+          <i class="line hidden-sm hidden-xs"></i>
+        </div>
+        <div class="col-md-7">
+          Tab panes
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="news_1">
+              <ul>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="news_2">
+              <ul>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="news_3">
+              <ul>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="news_4">
+              <ul>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+                <li>【微还款】2016年12月10日共23个项目按时完成全部还款</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="panel panel-default">
+  <!-- Default panel contents -->
+      <div class="panel-heading"><span>零食新闻中心</span> <button class="btn btn-news" type="submit">更多</button></div>
+     <!--  <div class="panel-body">
+        <p>...</p>
+      </div> -->
+
+      <!-- List group -->
+      <ul class="list-group">
+        <li class="list-group-item"><span>超级礼包来袭ing</span><span class="time">06-32</span></li>
+        <li class="list-group-item"><span>什么？果脯好好吃！</span><span class="time">02-30</span></li>
+        <li class="list-group-item"><span>吃了这个我都哭了</span><span class="time">09-31</span></li>
+        <li class="list-group-item"><span>网红们都在吃的网红零食</span><span class="time">04-31</span></li>
+        <li class="list-group-item"><span>震惊！女子靠吃零食成功减肥。</span><span class="time">06-01</span></li>
+      </ul>
+    </div>
+    </div>
+  </section>
+  <section>
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <div class="thumbnail">
+          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544160914857&di=8c6fded251d85630f846bc8f277147b6&imgtype=0&src=http%3A%2F%2Fimages7.m.china.com.cn%2Fnewschina%2F2018_01_10%2F17%2Fa5de6c9c0f2ec59aa27672f93e732b32751970ffe2470885_600_9999.jpg" alt="美食正在赶来的路上...">
+          <div class="caption">
+            <h3 class="text-center">毛巾蛋糕卷</h3>
+            <p><a href="#" class="btn btn-primary" role="button">购买</a> <a href="#" class="btn btn-default" role="button">加入购物车</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <div class="thumbnail">
+          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544160961636&di=604e6d7c9f3954f003339cb96c4dbc87&imgtype=0&src=http%3A%2F%2Fimage.rakuten.co.jp%2Fsakuranbo%2Fcabinet%2Fsweets7%2Fc519-img04.jpg" alt="美食正在赶来的路上...">
+          <div class="caption">
+            <h3 class="text-center">涂层烘焙蛋糕</h3>
+            <p><a href="#" class="btn btn-primary" role="button">购买</a> <a href="#" class="btn btn-default" role="button">加入购物车</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <div class="thumbnail">
+          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544160990292&di=c7ba59acc6096f0f64d7bc5af6dd8dda&imgtype=0&src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz%2FCyELJZMqaODpQRReOcUyBeKyh0kicDsDN7utoRbtIUt5xBToiaicmWUCPc2YejLia1g6ibxictyvBy3s927Ij15uq45A%2F0" alt="美食正在赶来的路上...">
+          <div class="caption">
+            <h3 class="text-center">爆炸薯条</h3>
+            <p><a href="#" class="btn btn-primary" role="button">购买</a> <a href="#" class="btn btn-default" role="button">加入购物车</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <div class="thumbnail">
+          <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544161041117&di=e32416d4547afad6060bce36fd1aefc4&imgtype=0&src=http%3A%2F%2Fs10.sinaimg.cn%2Fmw690%2F006myHnvgy728CQExTj29%26690" alt="美食正在赶来的路上...">
+          <div class="caption">
+            <h3 class="text-center">冰·冬瓜条</h3>
+            <p><a href="#" class="btn btn-primary" role="button">购买</a> <a href="#" class="btn btn-default" role="button">加入购物车</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /新闻 -->
+  <!-- 合作伙伴 -->
+ 
+  <!-- /合作伙伴 -->
+  <footer class="hidden-xs">
+     <div class="footer">
+      
+          <div class="top_footer">
+              <div class="w">
+                   <ul>
+                      <li>
+                         <b>多</b>
+                         <span>品类齐全，轻松购物</span>
+                      </li>
+                      <li>
+                         <b class="fs">快</b>
+                         <span>多仓直发，极速配送</span>
+                      </li>
+                      <li>
+                         <b class="gd">好</b>
+                         <span>正品行货，精致服务</span>
+                      </li>
+                      <li>
+                        <b class="sv">省</b>
+                        <span>天天低价，畅选无忧</span>
+                      </li>
+                   </ul>
+              </div>
+          </div>
+
+
+          <div class="middle_footer  w">
+            
+             <dl>
+               <dt>购物指南</dt>
+               <dd>会员介绍</dd>
+               <dd>生活旅行</dd>
+               <dd>常见问题</dd>
+               <dd>联系客服</dd>
+             </dl>
+             <dl>
+               <dt>配送方式</dt>
+               <dd>会员介绍</dd>
+               <dd>生活旅行</dd>
+               <dd>常见问题</dd>
+               <dd>联系客服</dd>
+             </dl>
+             <dl>
+               <dt>支付方式</dt>
+               <dd>会员介绍</dd>
+               <dd>生活旅行</dd>
+               <dd>常见问题</dd>
+               <dd>联系客服</dd>
+             </dl>
+             <dl>
+               <dt>售后服务</dt>
+               <dd>会员介绍</dd>
+               <dd>生活旅行</dd>
+               <dd>常见问题</dd>
+               <dd>联系客服</dd>
+             </dl>
+             <dl>
+               <dt>特色服务</dt>
+               <dd>会员介绍</dd>
+               <dd>生活旅行</dd>
+               <dd>常见问题</dd>
+               <dd>联系客服</dd>
+             </dl>
+             <dl class="last-dl">
+               <dt>京东自营覆盖区县</dt>
+               <dd>
+                <p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+                <a href="#">查看详情</a>
+               </dd>
+             </dl>
+          </div>
+
+
+          <div class="bot_footer">
+            
+            <p>
+              <a href="#">关于我们</a><span>|</span>
+              <a href="#">联系我们</a><span>|</span>
+              <a href="#">联系客服</a><span>|</span>
+              <a href="#">合作招商</a><span>|</span>
+              <a href="#">商家帮助</a><span>|</span>
+              <a href="#">营销中心</a><span>|</span>
+              <a href="#">手机京东</a><span>|</span>
+              <a href="#">友情链接</a><span>|</span>
+              <a href="#">销售联盟</a><span>|</span>
+              <a href="#">京东社区</a><span>|</span>
+              <a href="#">风险监测</a><span>|</span>
+              <a href="#">隐私政策</a><span>|</span>
+              <a href="#">京东公益</a><span>|</span>
+              <a href="#">English Site</a><span>|</span>
+              <a href="#">Media & IR</a>
+            </p>
+
+          </div>
+    </div>
+    <section id="partner">
+    <div class="container">
+      <h3 class="text-center">支持支付类型</h3>
+      <div class="text-center">
+        <ul class="partner-list">
+          <li>
+            <a class="icon-uniE930" href="http://www.chinapay.com/" target="_blank"></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </section>
+</footer>
+  
+  </footer>
+  <!-- 登录对话框 -->
+  <div class="modal fade">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">欢迎登录哈哈哈</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- <div class="footer">
+      
+          <div class="top_footer">
+              <div class="w">
+                   <ul>
+                      <li>
+                         <b>多</b>
+                         <span>品类齐全，轻松购物</span>
+                      </li>
+                      <li>
+                         <b class="fs">快</b>
+                         <span>多仓直发，极速配送</span>
+                      </li>
+                      <li>
+                         <b class="gd">好</b>
+                         <span>正品行货，精致服务</span>
+                      </li>
+                      <li>
+                        <b class="sv">省</b>
+                        <span>天天低价，畅选无忧</span>
+                      </li>
+                   </ul>
+              </div>
+          </div>
+
+
+          <div class="middle_footer  w">
+            
+             <dl>
+               <dt>购物指南</dt>
+               <dd>会员介绍</dd>
+               <dd>生活旅行</dd>
+               <dd>常见问题</dd>
+               <dd>联系客服</dd>
+             </dl>
+             <dl>
+               <dt>配送方式</dt>
+               <dd>会员介绍</dd>
+               <dd>生活旅行</dd>
+               <dd>常见问题</dd>
+               <dd>联系客服</dd>
+             </dl>
+             <dl>
+               <dt>支付方式</dt>
+               <dd>会员介绍</dd>
+               <dd>生活旅行</dd>
+               <dd>常见问题</dd>
+               <dd>联系客服</dd>
+             </dl>
+             <dl>
+               <dt>售后服务</dt>
+               <dd>会员介绍</dd>
+               <dd>生活旅行</dd>
+               <dd>常见问题</dd>
+               <dd>联系客服</dd>
+             </dl>
+             <dl>
+               <dt>特色服务</dt>
+               <dd>会员介绍</dd>
+               <dd>生活旅行</dd>
+               <dd>常见问题</dd>
+               <dd>联系客服</dd>
+             </dl>
+             <dl class="last-dl">
+               <dt>京东自营覆盖区县</dt>
+               <dd>
+                <p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+                <a href="#">查看详情</a>
+               </dd>
+             </dl>
+          </div>
+
+
+          <div class="bot_footer">
+            
+            <p>
+              <a href="#">关于我们</a><span>|</span>
+              <a href="#">联系我们</a><span>|</span>
+              <a href="#">联系客服</a><span>|</span>
+              <a href="#">合作招商</a><span>|</span>
+              <a href="#">商家帮助</a><span>|</span>
+              <a href="#">营销中心</a><span>|</span>
+              <a href="#">手机京东</a><span>|</span>
+              <a href="#">友情链接</a><span>|</span>
+              <a href="#">销售联盟</a><span>|</span>
+              <a href="#">京东社区</a><span>|</span>
+              <a href="#">风险监测</a><span>|</span>
+              <a href="#">隐私政策</a><span>|</span>
+              <a href="#">京东公益</a><span>|</span>
+              <a href="#">English Site</a><span>|</span>
+              <a href="#">Media & IR</a>
+            </p>
+            <p class="p2">
+              <a href="">京公网安备 11000002000088号</a>|
+              <a href="">京ICP证070359号</a>|
+              <a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>|
+              <a href="">新出发京零 字第大120007号</a>
+            </p>
+
+          </div>
+    </div> -->
+  <!-- /登录对话框 -->
+ 
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+  <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+  <script src="js/mainsecond.js"></script>
+
+  
+</body>
+
+</html>
